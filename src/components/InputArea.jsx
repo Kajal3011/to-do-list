@@ -9,7 +9,7 @@ function InputArea(props) {
     }
 
     return <div className="flex-container sbet">
-        <input type="text" value={newItem.todo} onChange={handleChange} placeholder="add todo item" ></input>
+        <input type="text" value={newItem.todo} onChange={handleChange} placeholder="Add Task" className="content"></input>
         <button className="add-btn" onClick={() => {
             props.addItem(newItem);
             setNewItem({ completed: false, id: "", todo: "" });
